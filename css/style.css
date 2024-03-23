@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+}
+
+nav {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* HEADER */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    /* FLEX */
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 100px;
+}
+
+header nav {
+     /* FLEX */
+     display: -webkit-flex;
+     display: -moz-flex;
+     display: -ms-flex;
+     display: -o-flex;
+     display: flex;
+}
+
+header nav li {
+    margin: 0 15px;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px) {
+    header {
+        padding: 20px 50px;
+    }
+}
+
+@media(max-width:700px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav{
+        margin-top: 10px;
+    }
+
+    header .logo img{
+        width: 80%;
+    }
+
+    header nav li a{
+        font-size: 15px;
+    }
+}
+
+
+/* SECCION */
+
+section{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+
+@media(max-width:1000px) {
+    section{
+        padding: 100px 50px;
+    }
+}
+
+@media(max-width:600px) {
+    section{
+        padding: 120px 30px;
+    }
+}
+
+/* BANNER */
+
+.banner {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    min-height: 80vh;
+}
+
+.banner .banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url("../img/banner.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.banner .banner-img::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    content: '';
+}
+
+.banner h1 {
+    margin-top: 10%;
+    margin-bottom: 10px;
+    font-size: 60px;
+}
+
+.banner h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.banner a.banner-btn {
+    text-transform: uppercase;
+    background: crimson;
+    border-radius: 50px;
+    padding: 15px 30px;
+}
+
+@media(max-width: 800px){
+    .banner {
+        min-height: 600px;
+    }
+    .banner h1 {
+        margin-top: 70%;
+        font-size: 25px;
+    }
+    .banner h2 {
+        font-size: 20px;
+    }
+    .banner a.banner-btn {
+        font-size: 15px;
+        padding: 10px 25 px;
+    }
+
+}
+
+/* DIOS ZORO */
+
+.dios-contenido {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dios-titulo {
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+.dios-contenido li {
+    padding: 20px;
+    height: 300px;
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.dios-izq {
+    background-image: url("../img/zoro.gif");
+    flex-basis: 40%;
+}
+
+.dios-der {
+    flex-basis: 60%;
+}
+
+.dios-contenido p {
+    margin-bottom: 35px;
+    text-align: justify;
+    padding-left: 0;
+}
+
+.dios-contenido h2 {
+    margin-bottom: 3%;
+}
+
+.dios-btn {
+    text-transform: uppercase;
+    background: crimson;
+    border-radius: 50px;
+    padding: 15px 30px;
+}
+
+@media(max-width:1000px){
+    .dios-der , .dios-izq {
+        flex-basis: 100%;
+    }
+    .dios-contenido p {
+        text-align: justify;
+    }
+    .dios-contenido li {
+        padding: 8px;
+    }
+    
+    .dios-contenido li h2 {
+        text-align: center;
+    }
+    
+    .dios-der{
+        text-align: center;
+    }
+}
+
+/* MARINA */
+
+.Marina-contenido {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Marina-titulo {
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+.Marina-contenido li {
+    padding: 20px;
+    height: 300px;
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center;
+}
+
+ul {
+    list-style: none;
+}
+
+/* TAREA MODIFICAR POSICION */
+
+.Marina-izq {
+    background-image: url("../img/aokiji.gif");
+    flex-basis: 40%;
+}
+
+.Marina-der{
+    flex-basis: 60%;
+}
+
+.Marina-contenido p {
+    margin-bottom: 35px;
+    text-align: justify;
+    padding-left: 0;
+}
+
+.Marina-contenido h2 {
+    margin-bottom: 3%;
+}
+
+.Marina-btn {
+    text-transform: uppercase;
+    background: crimson;
+    border-radius: 50px;
+    padding: 15px 30px;
+}
+
+@media(max-width:1000px){
+    .Marina-der , .Marina-izq {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .Marina-contenido p {
+        text-align: justify;
+    }
+    .Marina-contenido li {
+        padding: 8px;
+    }
+}
+
+/* MuGIWARAS */
+
+#mugiwaras{
+    background: rgb(94, 87, 87);
+}
+
+.mugiwaras-contenido {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.mugiwaras-titulo {
+    margin-bottom: 5%;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.mugiwaras-contenido li {
+    padding: 0 30px;
+    flex-basis: 33%;
+    text-align: center;
+}
+
+.mugiwaras-contenido li h4 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+@media(max-width:1000px){
+    .mugiwaras-contenido li {
+        flex-basis: 100%;
+        margin-bottom: 60px;
+    }
+
+    .mugiwaras-titulo{
+        font-size: 40px;
+        margin-bottom: 8%;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 60px 0;
+}
+
