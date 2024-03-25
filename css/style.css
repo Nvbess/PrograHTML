@@ -168,12 +168,16 @@ section{
         font-size: 15px;
         padding: 10px 25 px;
     }
+    .logo {
+        text-align: center;
+    }
 
 }
 
 /* DIOS ZORO */
 
 .dios-contenido {
+    /* FLEX */
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -181,6 +185,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 
 .dios-titulo {
@@ -201,12 +206,12 @@ ul {
     list-style: none;
 }
 
-.dios-izq {
+.dios-der {
     background-image: url("../img/zoro.gif");
     flex-basis: 40%;
 }
 
-.dios-der {
+.dios-izq {
     flex-basis: 60%;
 }
 
@@ -249,7 +254,8 @@ ul {
 
 /* MARINA */
 
-.Marina-contenido {
+.marina-contenido {
+    /* FLEX */
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -257,15 +263,16 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 
-.Marina-titulo {
+.marina-titulo {
     text-transform: uppercase;
     font-size: 50px;
     margin-bottom: 5%;
 }
 
-.Marina-contenido li {
+.marina-contenido li {
     padding: 20px;
     height: 300px;
     background-size: cover;
@@ -279,26 +286,26 @@ ul {
 
 /* TAREA MODIFICAR POSICION */
 
-.Marina-izq {
+.marina-izq {
     background-image: url("../img/aokiji.gif");
     flex-basis: 40%;
 }
 
-.Marina-der{
+.marina-der{
     flex-basis: 60%;
 }
 
-.Marina-contenido p {
+.marina-contenido p {
     margin-bottom: 35px;
     text-align: justify;
     padding-left: 0;
 }
 
-.Marina-contenido h2 {
+.marina-contenido h2 {
     margin-bottom: 3%;
 }
 
-.Marina-btn {
+.marina-btn {
     text-transform: uppercase;
     background: crimson;
     border-radius: 50px;
@@ -306,25 +313,26 @@ ul {
 }
 
 @media(max-width:1000px){
-    .Marina-der , .Marina-izq {
+    .marina-der , .marina-izq {
         flex-basis: 100%;
         text-align: center;
     }
-    .Marina-contenido p {
+    .marina-contenido p {
         text-align: justify;
     }
-    .Marina-contenido li {
+    .marina-contenido li {
         padding: 8px;
     }
 }
 
-/* MuGIWARAS */
+/* MUGIWARAS */
 
 #mugiwaras{
     background: rgb(94, 87, 87);
 }
 
 .mugiwaras-contenido {
+    /* FLEX */
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
